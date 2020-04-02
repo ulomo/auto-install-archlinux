@@ -82,11 +82,7 @@ if [[ $answer == "yes" ]];then
     echo "install grub......."
     pacman --noconfirm -S grub efibootmgr
 
-    # generate config file
-    autoline
-    echo "generate configurate file........"
-    sleep 4
-    grub-mkconfig -o /boot/grub/grub.cfg
+
 
     # install grub to device
     autoline
@@ -105,7 +101,13 @@ if [[ $answer == "yes" ]];then
             exit
         fi
     fi
-
+    
+    # generate config file
+    autoline
+    echo "generate configurate file........"
+    sleep 4
+    grub-mkconfig -o /boot/grub/grub.cfg
+    
     # set root passwd
     autoline
     echo "set root passwd"
