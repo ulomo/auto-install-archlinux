@@ -81,7 +81,7 @@ if [[ $answer == "yes" ]];then
     echo "copy install script to /mnt......"
     cp ./step-two.sh /mnt
     if [[ $? != 0 ]];then
-        echo "u should copy chroot-install.sh script to /mnt first"
+        echo "u should copy step-two.sh script to /mnt first"
         exit
     fi
 
