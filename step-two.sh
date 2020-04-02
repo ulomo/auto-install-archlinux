@@ -113,7 +113,6 @@ if [[ $answer == "yes" ]];then
 
     # exit
     autoline
-    rm ./step-two.sh &>/dev/null
     say "ok, you can reboot system now"
     say "before reboot run: umount -R /mnt"
     exit
