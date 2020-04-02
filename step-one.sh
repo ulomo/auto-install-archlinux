@@ -79,7 +79,7 @@ if [[ $answer == "yes" ]];then
     # copy install script to /mnt
     autoline
     echo "copy install script to /mnt......"
-    cp ./chroot-install.sh /mnt
+    cp ./step-two.sh /mnt
     if [[ $? != 0 ]];then
         echo "u should copy chroot-install.sh script to /mnt first"
         exit
