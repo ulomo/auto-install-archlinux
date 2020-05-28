@@ -67,7 +67,7 @@ if [[ $answer == "yes" ]];then
     # install base package
     autoline
     echo "install base package......"
-    pacstrap /mnt base linux linux-firmware
+    pacstrap /mnt base base-devel linux linux-firmware
 
     # update time
     autoline
