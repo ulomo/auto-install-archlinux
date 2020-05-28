@@ -20,7 +20,7 @@ if [[ ! -f /root/step-two.sh ]];then
 fi
 if [[ ! -x /root/step-two.sh ]];then
     echo "the script cannot be executed with permission denied"
-    
+fi    
 
 autoline
 echo "testing ur system supports uefi or not......"
